@@ -1,0 +1,98 @@
+.page {
+    min-width: 440px;
+}
+.content {
+    border: 1px solid #c9cbd6;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 60%;
+    background-color: rgba(207,207, 207, .1);
+    box-shadow: 0px 0px 13px -3px rgba(34, 60, 80, 0.16);
+}
+
+.inputs {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.common-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.common-info__elem {
+    width: 100%;
+}
+
+.common-info__elem_curs {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid #ced4da;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.pasport {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.document {
+    width: 100%;
+}
+
+.document-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.document-info__series-number {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.document-info__series-number > .form-floating {
+    width: 100%;
+}
+
+.common-info__elem_curs{
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .form-floating>.form-control:focus~label,
+    .form-floating>.form-control:not(:placeholder-shown)~label,
+    .form-floating>.form-select~label {
+        font-size: 13px;
+    }
+}
+
+
+
+@media screen and (max-width: 700px){
+    .pasport{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .document-info__series-number{
+        flex-direction: column;
+    }
+}
