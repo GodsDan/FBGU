@@ -1,8 +1,7 @@
-
+const myForm = document.querySelector('form');
 const formSelect = myForm.querySelectorAll('.form-select');
 const formInput = myForm.querySelectorAll('input');
 const pasportInfo = document.querySelectorAll('.document-info__series-number input');
-const myForm = document.querySelector('form');
 
 function setOptionsToYearSelect() {
     const year = new Date().getFullYear();
