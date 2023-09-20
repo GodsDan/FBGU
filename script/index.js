@@ -17,6 +17,7 @@ document.querySelector("#selectDoc").addEventListener('change', function (e) {
     if (e.target.value !== 'pasport') {
         pasportInfo.forEach((item) => {
             item.disabled = 'disabled';
+            item.value = '';
         })
     }
     else {
